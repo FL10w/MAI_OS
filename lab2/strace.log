@@ -1,0 +1,169 @@
+8561  execve("./main", ["./main", "TGT", "5", "5"], 0x7fffa5a87940 /* 55 vars */) = 0
+8561  brk(NULL)                         = 0x55ee6c408000
+8561  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa6b7697000
+8561  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+8561  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+8561  fstat(3, {st_mode=S_IFREG|0644, st_size=95907, ...}) = 0
+8561  mmap(NULL, 95907, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa6b767f000
+8561  close(3)                          = 0
+8561  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+8561  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\236\2\0\0\0\0\0"..., 832) = 832
+8561  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+8561  fstat(3, {st_mode=S_IFREG|0755, st_size=2003408, ...}) = 0
+8561  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+8561  mmap(NULL, 2055800, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa6b7489000
+8561  mmap(0x7fa6b74b1000, 1462272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fa6b74b1000
+8561  mmap(0x7fa6b7616000, 352256, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18d000) = 0x7fa6b7616000
+8561  mmap(0x7fa6b766c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e2000) = 0x7fa6b766c000
+8561  mmap(0x7fa6b7672000, 52856, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa6b7672000
+8561  close(3)                          = 0
+8561  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa6b7486000
+8561  arch_prctl(ARCH_SET_FS, 0x7fa6b7486740) = 0
+8561  set_tid_address(0x7fa6b7486a10)   = 8561
+8561  set_robust_list(0x7fa6b7486a20, 24) = 0
+8561  rseq(0x7fa6b7486680, 0x20, 0, 0x53053053) = 0
+8561  mprotect(0x7fa6b766c000, 16384, PROT_READ) = 0
+8561  mprotect(0x55ee64617000, 4096, PROT_READ) = 0
+8561  mprotect(0x7fa6b76d5000, 8192, PROT_READ) = 0
+8561  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+8561  munmap(0x7fa6b767f000, 95907)     = 0
+8561  getrandom("\xdd\xf3\x07\x72\xd1\x12\xf2\xab", 8, GRND_NONBLOCK) = 8
+8561  brk(NULL)                         = 0x55ee6c408000
+8561  brk(0x55ee6c429000)               = 0x55ee6c429000
+8561  mmap(NULL, 9101312, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa6b6bd8000
+8561  rt_sigaction(SIGRT_1, {sa_handler=0x7fa6b75194b0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fa6b74c8df0}, NULL, 8) = 0
+8561  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+8561  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa6b63d7000
+8561  mprotect(0x7fa6b63d8000, 8388608, PROT_READ|PROT_WRITE) = 0
+8561  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+8561  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fa6b6bd7990, parent_tid=0x7fa6b6bd7990, exit_signal=0, stack=0x7fa6b63d7000, stack_size=0x7fff80, tls=0x7fa6b6bd76c0} => {parent_tid=[8562]}, 88) = 8562
+8561  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+8561  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa6b5bd6000
+8561  mprotect(0x7fa6b5bd7000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+8562  rseq(0x7fa6b6bd7600, 0x20, 0, 0x53053053 <unfinished ...>
+8561  <... mprotect resumed>)           = 0
+8561  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+8561  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fa6b63d6990, parent_tid=0x7fa6b63d6990, exit_signal=0, stack=0x7fa6b5bd6000, stack_size=0x7fff80, tls=0x7fa6b63d66c0} <unfinished ...>
+8562  <... rseq resumed>)               = 0
+8561  <... clone3 resumed> => {parent_tid=[8563]}, 88) = 8563
+8562  set_robust_list(0x7fa6b6bd79a0, 24 <unfinished ...>
+8561  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8562  <... set_robust_list resumed>)    = 0
+8561  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8562  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8561  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+8562  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8561  <... mmap resumed>)               = 0x7fa6b53d5000
+8563  rseq(0x7fa6b63d6600, 0x20, 0, 0x53053053 <unfinished ...>
+8561  mprotect(0x7fa6b53d6000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+8562  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+8563  <... rseq resumed>)               = 0
+8561  <... mprotect resumed>)           = 0
+8561  rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+8562  <... mmap resumed>)               = 0x7fa6ad200000
+8561  <... rt_sigprocmask resumed>, [], 8) = 0
+8562  munmap(0x7fa6ad200000, 48234496 <unfinished ...>
+8561  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fa6b5bd5990, parent_tid=0x7fa6b5bd5990, exit_signal=0, stack=0x7fa6b53d5000, stack_size=0x7fff80, tls=0x7fa6b5bd56c0} <unfinished ...>
+8562  <... munmap resumed>)             = 0
+8562  munmap(0x7fa6b4000000, 18874368 <unfinished ...>
+8563  set_robust_list(0x7fa6b63d69a0, 24) = 0
+8561  <... clone3 resumed> => {parent_tid=[8564]}, 88) = 8564
+8562  <... munmap resumed>)             = 0
+8564  rseq(0x7fa6b5bd5600, 0x20, 0, 0x53053053 <unfinished ...>
+8563  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8561  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8564  <... rseq resumed>)               = 0
+8562  mprotect(0x7fa6b0000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+8561  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8564  set_robust_list(0x7fa6b5bd59a0, 24 <unfinished ...>
+8563  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8561  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+8564  <... set_robust_list resumed>)    = 0
+8562  <... mprotect resumed>)           = 0
+8564  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8563  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+8561  <... mmap resumed>)               = 0x7fa6b4bd4000
+8564  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8563  <... mmap resumed>)               = 0x7fa6a8000000
+8561  mprotect(0x7fa6b4bd5000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+8564  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+8563  munmap(0x7fa6ac000000, 67108864 <unfinished ...>
+8561  <... mprotect resumed>)           = 0
+8564  <... mmap resumed>)               = 0x7fa6a0000000
+8563  <... munmap resumed>)             = 0
+8564  munmap(0x7fa6a4000000, 67108864 <unfinished ...>
+8561  rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+8563  mprotect(0x7fa6a8000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+8561  <... rt_sigprocmask resumed>, [], 8) = 0
+8564  <... munmap resumed>)             = 0
+8561  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fa6b53d4990, parent_tid=0x7fa6b53d4990, exit_signal=0, stack=0x7fa6b4bd4000, stack_size=0x7fff80, tls=0x7fa6b53d46c0} <unfinished ...>
+8563  <... mprotect resumed>)           = 0
+8564  mprotect(0x7fa6a0000000, 135168, PROT_READ|PROT_WRITE) = 0
+8561  <... clone3 resumed> => {parent_tid=[8565]}, 88) = 8565
+8565  rseq(0x7fa6b53d4600, 0x20, 0, 0x53053053 <unfinished ...>
+8561  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8565  <... rseq resumed>)               = 0
+8561  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8565  set_robust_list(0x7fa6b53d49a0, 24 <unfinished ...>
+8561  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+8565  <... set_robust_list resumed>)    = 0
+8561  <... mmap resumed>)               = 0x7fa6b43d3000
+8565  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8561  mprotect(0x7fa6b43d4000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+8565  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8561  <... mprotect resumed>)           = 0
+8565  mmap(0x7fa6a4000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+8561  rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+8565  <... mmap resumed>)               = 0x7fa6a4000000
+8561  <... rt_sigprocmask resumed>, [], 8) = 0
+8565  mprotect(0x7fa6a4000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+8561  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7fa6b4bd3990, parent_tid=0x7fa6b4bd3990, exit_signal=0, stack=0x7fa6b43d3000, stack_size=0x7fff80, tls=0x7fa6b4bd36c0} <unfinished ...>
+8565  <... mprotect resumed>)           = 0
+8561  <... clone3 resumed> => {parent_tid=[8566]}, 88) = 8566
+8566  rseq(0x7fa6b4bd3600, 0x20, 0, 0x53053053 <unfinished ...>
+8561  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8566  <... rseq resumed>)               = 0
+8561  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8566  set_robust_list(0x7fa6b4bd39a0, 24 <unfinished ...>
+8561  futex(0x7fa6b6bd7990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 8562, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+8566  <... set_robust_list resumed>)    = 0
+8566  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+8566  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa698000000
+8566  munmap(0x7fa69c000000, 67108864)  = 0
+8566  mprotect(0x7fa698000000, 135168, PROT_READ|PROT_WRITE) = 0
+8565  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+8565  madvise(0x7fa6b4bd4000, 8368128, MADV_DONTNEED) = 0
+8565  exit(0)                           = ?
+8565  +++ exited with 0 +++
+8563  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+8563  madvise(0x7fa6b5bd6000, 8368128, MADV_DONTNEED) = 0
+8563  exit(0)                           = ?
+8563  +++ exited with 0 +++
+8562  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+8564  rt_sigprocmask(SIG_BLOCK, ~[RT_1] <unfinished ...>
+8562  madvise(0x7fa6b63d7000, 8368128, MADV_DONTNEED <unfinished ...>
+8564  <... rt_sigprocmask resumed>, NULL, 8) = 0
+8562  <... madvise resumed>)            = 0
+8564  madvise(0x7fa6b53d5000, 8368128, MADV_DONTNEED <unfinished ...>
+8562  exit(0 <unfinished ...>
+8564  <... madvise resumed>)            = 0
+8562  <... exit resumed>)               = ?
+8564  exit(0)                           = ?
+8561  <... futex resumed>)              = 0
+8562  +++ exited with 0 +++
+8564  +++ exited with 0 +++
+8561  futex(0x7fa6b4bd3990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 8566, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+8566  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+8566  madvise(0x7fa6b43d3000, 8368128, MADV_DONTNEED) = 0
+8566  exit(0)                           = ?
+8561  <... futex resumed>)              = 0
+8566  +++ exited with 0 +++
+8561  munmap(0x7fa6b63d7000, 8392704)   = 0
+8561  fstat(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+8561  write(1, "\320\237\320\260\321\202\321\202\320\265\321\200\320\275: 'TGT'\n", 22) = 22
+8561  write(1, "\320\237\320\276\321\201\320\273\320\265\320\264\320\276\320\262\320\260\321\202\320\265\320\273\321\214\320\275\320\276: "..., 69) = 69
+8561  write(1, "\320\237\320\260\321\200\320\260\320\273\320\273\320\265\320\273\321\214\320\275\320\276    : 12.1"..., 65) = 65
+8561  write(1, "\320\243\321\201\320\272\320\276\321\200\320\265\320\275\320\270\320\265      : 2.80x\n", 32) = 32
+8561  munmap(0x7fa6b6bd8000, 9101312)   = 0
+8561  exit_group(0)                     = ?
+8561  +++ exited with 0 +++
